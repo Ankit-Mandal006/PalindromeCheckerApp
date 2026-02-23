@@ -7,6 +7,12 @@ This class will print the details of the App.
 
 public class PalindromeCheckerApp {
     public static void main(String[] args) {
-        System.out.println("Welcome to the Palindrome Checker Management System\nVersion : 1.0\nSystem initialized succesfully");
+       String wrd="madam",temp = "";
+       for(int i=0;i<wrd.length();i++)
+            temp=wrd.charAt(i)+temp;
+       if(temp.equals(wrd))
+           System.out.println("Palindrome");
+       else
+           System.out.println("Not Palindrome");
     }
 }
